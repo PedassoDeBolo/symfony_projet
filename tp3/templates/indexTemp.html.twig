@@ -1,0 +1,42 @@
+{% extends 'base.html.twig' %}
+
+{# herite de tout base.html.twig #}
+{% block contenu %}
+    <div class="container-fluid">
+        {# titre principal du site #}
+        {% block titrePrincipal %}
+            <div class="row">
+                <div class="col-md-12">
+                    <h1 class="text-center"> Prostages </h1>
+                </div>
+            </div>           
+        {% endblock %}
+        {# Tableau des differentes propositions de stage #}
+        {% block tableau %}
+            <div class="row justify-content-md-center">
+                <div class="col-md-10">
+                    <table class="table table-striped">
+                        <thead>
+                            <tr>
+                            <th scope="col">titre</th>
+                            <th scope="col">nom entreprise</th>
+                            <th scope="col">Activité entreprise</th>
+                            <th scope="col">Adresse entreprise</th>
+                            <th scope="col">Description</th>
+                            <th scope="col">Formations</th>
+                            <th scope="col">Email</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            {# <tr>
+                            <th scope="row"></th>
+                            <td colspan="2">Larry the Bird</td>
+                            <td>@twitter</td>
+                            </tr> #}
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        {% endblock %}
+    </div>
+{% endblock %}

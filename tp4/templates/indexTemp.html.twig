@@ -1,0 +1,18 @@
+{% extends 'base.html.twig' %}
+
+{# herite de tout base.html.twig #}
+{% block contenu %}
+    <div class="container-fluid">
+        {# titre principal du site #}
+        {% block titrePrincipal %}
+            <div class="row">
+                <div class="col-md-12">
+                    <h1 class="text-center"> Prostages </h1>
+                </div>
+            </div>           
+        {% endblock %}
+        {# Tableau des differentes propositions de stage #}
+        {% block tableau %}
+        {% endblock %}
+    </div>
+{% endblock %}

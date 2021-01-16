@@ -1,0 +1,15 @@
+index:
+    path: /
+    controller: App\Controller\TP1Controller::index
+
+entreprises:
+    path: /entreprises
+    controller: App\Controller\TP1Controller::entreprises
+
+formations:
+    path: /formations
+    controller: App\Controller\TP1Controller::formations
+
+stages:
+    path: /stages/{id}
+    controller: App\Controller\TP1Controller::stages
